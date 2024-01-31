@@ -9,3 +9,7 @@ pip install pandas matplotlib seaborn streamlit
 ```python
 streamlit run dashboard.py
 ```
+### Link for dashboard viz
+```
+https://bike-sharing-lusiaulia.streamlit.app/
+```

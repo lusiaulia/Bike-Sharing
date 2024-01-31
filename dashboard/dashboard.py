@@ -8,8 +8,8 @@ sns.set(style='white')
  
 
 # Load cleaned data
-hour_df = pd.read_csv("https://github.com/lusiaulia/Bike-Sharing/blob/main/dashboard/Hour.csv")
-day_df = pd.read_csv("https://github.com/lusiaulia/Bike-Sharing/blob/main/dashboard/Day.csv")
+hour_df = pd.read_csv("https://raw.githubusercontent.com/lusiaulia/Bike-Sharing/main/dashboard/Hour.csv")
+day_df = pd.read_csv("https://raw.githubusercontent.com/lusiaulia/Bike-Sharing/main/dashboard/Day.csv")
 
 datetime_columns = ["dteday"]
 day_df.sort_values(by="dteday", inplace=True)
@@ -45,7 +45,7 @@ month_df.index = ['Jan', 'Feb', 'Mar', 'April',
 
 with st.sidebar:
     st.header("Bike Sharing")
-    st.image("https://github.com/lusiaulia/Bike-Sharing/blob/main/dashboard/bbk.jpg")
+    st.image("https://raw.githubusercontent.com/lusiaulia/Bike-Sharing/main/dashboard/bbk.jpg")
     
     start_date, end_date = st.date_input(
         label='Rentang Waktu',min_value=min_date,
@@ -259,7 +259,7 @@ with col2:
         """)
 
 st.subheader("4. Pemanfaatan media untuk Mempengaruhi Pengendara 'Casual' Agar Menjadi Pengendara 'Terdaftar'")
-st.image('https://github.com/lusiaulia/Bike-Sharing/blob/main/dashboard/sosmed.png', width= 400, caption= 'Sosial Media, source : pngtree.com')
+st.image('https://raw.githubusercontent.com/lusiaulia/Bike-Sharing/21f68d601423545625691116c6d5a6678dba4027/dashboard/sosmed.png', width= 400, caption= 'Sosial Media, source : pngtree.com')
 with st.expander("Lihat Penjelasan"):
     st.write(
     """
